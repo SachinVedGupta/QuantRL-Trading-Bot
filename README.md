@@ -1,12 +1,15 @@
 IMAGES
 
 ![image](https://github.com/user-attachments/assets/e61a7681-2a1e-4812-b015-5e64c00ad16b)
+![image](https://github.com/user-attachments/assets/acb63d57-2fd3-4d0c-84e3-7d93317ab03a)
+![image](https://github.com/user-attachments/assets/a0ec3f40-66c6-42f4-a839-8bc5a9f6fc69)
+![image](https://github.com/user-attachments/assets/6ce006c6-4f5c-456f-aa3d-c5b10c48d363)
+![image](https://github.com/user-attachments/assets/468e50b5-949f-4dc3-8935-8e7ef1c2fdad)
 
 
+ABOUT THE PROJECT/APP/MODEL
 
-
-
-
+![image](https://github.com/user-attachments/assets/3da9570f-c1e1-4868-beb9-3ef87ca4464d)
 
 
 GETTING STARTED (RUNNING THE APP)
