@@ -111,7 +111,7 @@ class MultiStockEnv:
     - 1 = hold
     - 2 = buy
   """
-  def __init__(self, data, initial_investment=20000):
+  def __init__(self, data, initial_investment=100000):
     # data
     self.stock_price_history = data
     self.n_step, self.n_stock = self.stock_price_history.shape
@@ -341,7 +341,10 @@ if __name__ == '__main__':
   # config
   models_folder = 'rl_trader_models'
   rewards_folder = 'rl_trader_rewards'
-  num_episodes = 1 #should be 2000
+
+  # if in test mode use 1 episode (as theres only 1 opportunity when investing in real life as no redo's)
+  # if in training mode: should be 2000 (or do a small number like 1/2/3 if takes too long).
+  num_episodes = 1
   batch_size = 32
   initial_investment = 100000
 

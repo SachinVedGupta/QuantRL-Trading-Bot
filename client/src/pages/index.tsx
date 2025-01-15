@@ -107,14 +107,22 @@ function Index() {
               The initial investment is $100,000. View the charts below for graphs representing the Stock Prices, Portfolio Value, and Stocks Owned at any given time step (day). The "stocks owned" depicts what the stock trader is doing at any given time, with shifts meaning that the bot has bought/sold certain stocks at that time.
             </h2>
             <h2 className="text-xl text-blue-900 mb-4 text-center">
-              This is an ML + Reinforcement Learning based Stock Trading bot. It operates in a customer environment where there are actions and states. When in training mode, the bot's actions affect its reward, which is used as a metric for it (the model) to learn, train, and improve. It runs through the training data (first half of historical data) multiple times, continuously optimizing and improving as it gains more and more experience. Then, it applies that "knowledge" when running on the test data, of which it has never seen before (second half of historical data). It runs over this just once, in order to simulate a real-world scenario where you just have one chance to invest and can't go back or have a redo.
+              This is an ML + Reinforcement Learning based Stock Trading bot. It operates in a custom reinforcement learning environment where there are actions and states. When in training mode, the bot's actions affect its reward, which is used as a metric for it (the model) to learn, train, and improve. The model is a Multi-Layer Perceptron (MLP), meaning its essentially a Feedforward ANN (Artifical Neural Network) with multiple hidden layers. It runs through the training data (first half of historical data) multiple times, continuously optimizing and improving as it gains more and more experience. Then, it applies that "knowledge" when running on the test data, of which it has never seen before (second half of historical data). It runs over this just once, in order to simulate a real-world scenario where you just have one chance to invest and can't go back or have a redo.
             </h2>
             <h2 className="text-xl text-blue-900 mb-4 text-center">
               At any given time, the bot only knows the current and historical data, and is doing actions (buy/sell/hold any stock respectively) that it believes will maximize the future reward (a high portfolio value). Therefore, it is essentially running through a simulation, that mimics how it would work in real life!
             </h2>
+            <h2 className="text-xl text-blue-900 mb-4 text-center">
+              Local Repository note: Run the application locally according to the README. The model is currently set up to manage a fund with 3 stocks in it, being Apple, Motorola, and Starbucks, though the stocks used can be changed easily. In the local repository run the rl_trader.py file according to the README to re-train or re-run the model. 
+            </h2>
           </div>
         )}
       </div>
+
+      <h2 className="text-l text-blue-900 mt-8 text-center font-bold">
+        Below is a trade log showing the </h2>
+      <h2 className="text-l text-blue-900 mb-4 text-center font-bold">
+      model/simulation's status at every step/day</h2>
 
       {/* Stock Prices Chart */}
       <div className="bg-white mb-6 p-6 rounded-lg shadow-md">

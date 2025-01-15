@@ -285,7 +285,7 @@ function Index() {
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("h2", {
                                 className: "text-xl text-blue-900 mb-4 text-center",
-                                children: "This is an ML + Reinforcement Learning based Stock Trading bot. It operates in a customer environment where there are actions and states. When in training mode, the bot's actions affect its reward, which is used as a metric for it (the model) to learn, train, and improve. It runs through the training data (first half of historical data) multiple times, continuously optimizing and improving as it gains more and more experience. Then, it applies that \"knowledge\" when running on the test data, of which it has never seen before (second half of historical data). It runs over this just once, in order to simulate a real-world scenario where you just have one chance to invest and can't go back or have a redo."
+                                children: "This is an ML + Reinforcement Learning based Stock Trading bot. It operates in a custom reinforcement learning environment where there are actions and states. When in training mode, the bot's actions affect its reward, which is used as a metric for it (the model) to learn, train, and improve. The model is a Multi-Layer Perceptron (MLP), meaning its essentially a Feedforward ANN (Artifical Neural Network) with multiple hidden layers. It runs through the training data (first half of historical data) multiple times, continuously optimizing and improving as it gains more and more experience. Then, it applies that \"knowledge\" when running on the test data, of which it has never seen before (second half of historical data). It runs over this just once, in order to simulate a real-world scenario where you just have one chance to invest and can't go back or have a redo."
                             }, void 0, false, {
                                 fileName: "[project]/src/pages/index.tsx",
                                 lineNumber: 109,
@@ -297,6 +297,14 @@ function Index() {
                             }, void 0, false, {
                                 fileName: "[project]/src/pages/index.tsx",
                                 lineNumber: 112,
+                                columnNumber: 13
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("h2", {
+                                className: "text-xl text-blue-900 mb-4 text-center",
+                                children: "Local Repository note: Run the application locally according to the README. The model is currently set up to manage a fund with 3 stocks in it, being Apple, Motorola, and Starbucks, though the stocks used can be changed easily. In the local repository run the rl_trader.py file according to the README to re-train or re-run the model."
+                            }, void 0, false, {
+                                fileName: "[project]/src/pages/index.tsx",
+                                lineNumber: 115,
                                 columnNumber: 13
                             }, this)
                         ]
@@ -311,6 +319,22 @@ function Index() {
                 lineNumber: 84,
                 columnNumber: 13
             }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("h2", {
+                className: "text-l text-blue-900 mt-8 text-center font-bold",
+                children: "Below is a trade log showing the "
+            }, void 0, false, {
+                fileName: "[project]/src/pages/index.tsx",
+                lineNumber: 122,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("h2", {
+                className: "text-l text-blue-900 mb-4 text-center font-bold",
+                children: "model/simulation's status at every step/day"
+            }, void 0, false, {
+                fileName: "[project]/src/pages/index.tsx",
+                lineNumber: 124,
+                columnNumber: 7
+            }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
                 className: "bg-white mb-6 p-6 rounded-lg shadow-md",
                 children: [
@@ -319,20 +343,20 @@ function Index() {
                         children: "Stock Prices"
                     }, void 0, false, {
                         fileName: "[project]/src/pages/index.tsx",
-                        lineNumber: 121,
+                        lineNumber: 129,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$externals$5d2f$react$2d$chartjs$2d$2__$5b$external$5d$__$28$react$2d$chartjs$2d$2$2c$__esm_import$29$__["Line"], {
                         data: stockPricesData
                     }, void 0, false, {
                         fileName: "[project]/src/pages/index.tsx",
-                        lineNumber: 122,
+                        lineNumber: 130,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/pages/index.tsx",
-                lineNumber: 120,
+                lineNumber: 128,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
@@ -343,20 +367,20 @@ function Index() {
                         children: "Portfolio Value"
                     }, void 0, false, {
                         fileName: "[project]/src/pages/index.tsx",
-                        lineNumber: 127,
+                        lineNumber: 135,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$externals$5d2f$react$2d$chartjs$2d$2__$5b$external$5d$__$28$react$2d$chartjs$2d$2$2c$__esm_import$29$__["Line"], {
                         data: portfolioValueData
                     }, void 0, false, {
                         fileName: "[project]/src/pages/index.tsx",
-                        lineNumber: 128,
+                        lineNumber: 136,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/pages/index.tsx",
-                lineNumber: 126,
+                lineNumber: 134,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
@@ -367,20 +391,20 @@ function Index() {
                         children: "Stocks Owned"
                     }, void 0, false, {
                         fileName: "[project]/src/pages/index.tsx",
-                        lineNumber: 133,
+                        lineNumber: 141,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$externals$5d2f$react$2d$chartjs$2d$2__$5b$external$5d$__$28$react$2d$chartjs$2d$2$2c$__esm_import$29$__["Line"], {
                         data: stocksOwnedData
                     }, void 0, false, {
                         fileName: "[project]/src/pages/index.tsx",
-                        lineNumber: 134,
+                        lineNumber: 142,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/pages/index.tsx",
-                lineNumber: 132,
+                lineNumber: 140,
                 columnNumber: 7
             }, this),
             stepsData.map((stepData, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
@@ -396,7 +420,7 @@ function Index() {
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/pages/index.tsx",
-                            lineNumber: 140,
+                            lineNumber: 148,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
@@ -409,7 +433,7 @@ function Index() {
                                             children: "Action:"
                                         }, void 0, false, {
                                             fileName: "[project]/src/pages/index.tsx",
-                                            lineNumber: 145,
+                                            lineNumber: 153,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("ul", {
@@ -423,18 +447,18 @@ function Index() {
                                                     ]
                                                 }, idx, true, {
                                                     fileName: "[project]/src/pages/index.tsx",
-                                                    lineNumber: 148,
+                                                    lineNumber: 156,
                                                     columnNumber: 19
                                                 }, this))
                                         }, void 0, false, {
                                             fileName: "[project]/src/pages/index.tsx",
-                                            lineNumber: 146,
+                                            lineNumber: 154,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/pages/index.tsx",
-                                    lineNumber: 144,
+                                    lineNumber: 152,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
@@ -444,7 +468,7 @@ function Index() {
                                             children: "Cash in Hand:"
                                         }, void 0, false, {
                                             fileName: "[project]/src/pages/index.tsx",
-                                            lineNumber: 155,
+                                            lineNumber: 163,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("p", {
@@ -454,68 +478,6 @@ function Index() {
                                                 stepData.cash_in_hand.toFixed(2)
                                             ]
                                         }, void 0, true, {
-                                            fileName: "[project]/src/pages/index.tsx",
-                                            lineNumber: 156,
-                                            columnNumber: 15
-                                        }, this)
-                                    ]
-                                }, void 0, true, {
-                                    fileName: "[project]/src/pages/index.tsx",
-                                    lineNumber: 154,
-                                    columnNumber: 13
-                                }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
-                                    children: [
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("h3", {
-                                            className: "text-lg text-gray-800 mb-2",
-                                            children: "Portfolio Value:"
-                                        }, void 0, false, {
-                                            fileName: "[project]/src/pages/index.tsx",
-                                            lineNumber: 159,
-                                            columnNumber: 15
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("p", {
-                                            className: "text-gray-800",
-                                            children: [
-                                                "$",
-                                                stepData.portfolio_value.toFixed(2)
-                                            ]
-                                        }, void 0, true, {
-                                            fileName: "[project]/src/pages/index.tsx",
-                                            lineNumber: 160,
-                                            columnNumber: 15
-                                        }, this)
-                                    ]
-                                }, void 0, true, {
-                                    fileName: "[project]/src/pages/index.tsx",
-                                    lineNumber: 158,
-                                    columnNumber: 13
-                                }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
-                                    children: [
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("h3", {
-                                            className: "text-lg text-gray-800 mb-2",
-                                            children: "Stock Prices:"
-                                        }, void 0, false, {
-                                            fileName: "[project]/src/pages/index.tsx",
-                                            lineNumber: 163,
-                                            columnNumber: 15
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("ul", {
-                                            className: "list-none",
-                                            children: stepData.stock_prices.map((price, idx)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("li", {
-                                                    className: "text-gray-600",
-                                                    children: [
-                                                        stockLabels[idx],
-                                                        ": $",
-                                                        price.toFixed(2)
-                                                    ]
-                                                }, idx, true, {
-                                                    fileName: "[project]/src/pages/index.tsx",
-                                                    lineNumber: 166,
-                                                    columnNumber: 19
-                                                }, this))
-                                        }, void 0, false, {
                                             fileName: "[project]/src/pages/index.tsx",
                                             lineNumber: 164,
                                             columnNumber: 15
@@ -530,10 +492,72 @@ function Index() {
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("h3", {
                                             className: "text-lg text-gray-800 mb-2",
+                                            children: "Portfolio Value:"
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/pages/index.tsx",
+                                            lineNumber: 167,
+                                            columnNumber: 15
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("p", {
+                                            className: "text-gray-800",
+                                            children: [
+                                                "$",
+                                                stepData.portfolio_value.toFixed(2)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/src/pages/index.tsx",
+                                            lineNumber: 168,
+                                            columnNumber: 15
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/src/pages/index.tsx",
+                                    lineNumber: 166,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("h3", {
+                                            className: "text-lg text-gray-800 mb-2",
+                                            children: "Stock Prices:"
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/pages/index.tsx",
+                                            lineNumber: 171,
+                                            columnNumber: 15
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("ul", {
+                                            className: "list-none",
+                                            children: stepData.stock_prices.map((price, idx)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("li", {
+                                                    className: "text-gray-600",
+                                                    children: [
+                                                        stockLabels[idx],
+                                                        ": $",
+                                                        price.toFixed(2)
+                                                    ]
+                                                }, idx, true, {
+                                                    fileName: "[project]/src/pages/index.tsx",
+                                                    lineNumber: 174,
+                                                    columnNumber: 19
+                                                }, this))
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/pages/index.tsx",
+                                            lineNumber: 172,
+                                            columnNumber: 15
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/src/pages/index.tsx",
+                                    lineNumber: 170,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("h3", {
+                                            className: "text-lg text-gray-800 mb-2",
                                             children: "Stocks Owned:"
                                         }, void 0, false, {
                                             fileName: "[project]/src/pages/index.tsx",
-                                            lineNumber: 173,
+                                            lineNumber: 181,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("ul", {
@@ -547,30 +571,30 @@ function Index() {
                                                     ]
                                                 }, idx, true, {
                                                     fileName: "[project]/src/pages/index.tsx",
-                                                    lineNumber: 176,
+                                                    lineNumber: 184,
                                                     columnNumber: 19
                                                 }, this))
                                         }, void 0, false, {
                                             fileName: "[project]/src/pages/index.tsx",
-                                            lineNumber: 174,
+                                            lineNumber: 182,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/pages/index.tsx",
-                                    lineNumber: 172,
+                                    lineNumber: 180,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/pages/index.tsx",
-                            lineNumber: 143,
+                            lineNumber: 151,
                             columnNumber: 11
                         }, this)
                     ]
                 }, index, true, {
                     fileName: "[project]/src/pages/index.tsx",
-                    lineNumber: 139,
+                    lineNumber: 147,
                     columnNumber: 9
                 }, this))
         ]

@@ -322,8 +322,28 @@ img, video {
   margin-bottom: 2rem;
 }
 
+.mt-2 {
+  margin-top: .5rem;
+}
+
+.mt-10 {
+  margin-top: 2.5rem;
+}
+
+.mt-8 {
+  margin-top: 2rem;
+}
+
+.mb-1 {
+  margin-bottom: .25rem;
+}
+
 .grid {
   display: grid;
+}
+
+.hidden {
+  display: none;
 }
 
 .max-w-screen-xl {
