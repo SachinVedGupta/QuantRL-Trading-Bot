@@ -1,3 +1,15 @@
+IMAGES
+
+![image](https://github.com/user-attachments/assets/e61a7681-2a1e-4812-b015-5e64c00ad16b)
+
+
+
+
+
+
+
+
+GETTING STARTED (RUNNING THE APP)
 
 start virt env
 1. python3 -m venv .venv OR python -m venv .venv
