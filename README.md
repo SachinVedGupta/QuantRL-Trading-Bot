@@ -22,7 +22,7 @@ retrain/rerun the model for new outputs (for a new simulation run through) (the 
 4. The next.js front end should now update with the new model results
 
 features coming soon
-1. User enters 3 stocks for their fund, and model trades them based on up to date data (via yahoo finance api)
+1. User enters 3 stocks for their fund (compared to the 3 pre-chosen stocks), and model trades them based on up to date data (via yahoo finance api)
 2. Model training takes place on AWS Sagemaker (allowing it to be much faster)
 3. Backend (flask) deployed on AWS EC2
 4. Frontend deployed on Vercel

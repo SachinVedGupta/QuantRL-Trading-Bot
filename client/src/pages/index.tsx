@@ -120,9 +120,9 @@ function Index() {
       </div>
 
       <h2 className="text-l text-blue-900 mt-8 text-center font-bold">
-        Below is a trade log showing the </h2>
+        Below are 3 graphs showcasing the environment's </h2>
       <h2 className="text-l text-blue-900 mb-4 text-center font-bold">
-      model/simulation's status at every step/day</h2>
+      status and model's actions on each step/day</h2>
 
       {/* Stock Prices Chart */}
       <div className="bg-white mb-6 p-6 rounded-lg shadow-md">
@@ -141,6 +141,11 @@ function Index() {
         <h2 className="text-xl text-blue-600 mb-4 text-center">Stocks Owned</h2>
         <Line data={stocksOwnedData} />
       </div>
+
+      <h1 className="text-3xl font-bold text-center text-gray-800 mb-2 mt-20">
+        Here is the in-depth trade log </h1>
+      <h1 className="text-3xl font-bold text-center text-gray-800 mb-25 pb-9">
+      for each step/day</h1>
 
       {/* Individual Steps Data */}
       {stepsData.map((stepData, index) => (
