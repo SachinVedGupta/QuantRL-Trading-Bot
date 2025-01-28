@@ -16,7 +16,8 @@ start client
 retrain/rerun the model for new outputs (for a new simulation run through) (the GUI will be updating with the new model data and simulation run through)
 1. cd ./server/scripts/tensorflow
 2. python rl_trader.py -m <test OR train>
-      example: "python rl_trader.py -m test"
+      example: "python rl_trader.py -m test"  --> 1min for one episode on AWS SageMaker and 3min on local (but train takes less than a second)
+
       note: can modify the num_episodes in rl_trader.py if desired (run time may vary based on device)
 3. To view reward data for each episode run "python plot_rl_rewards.py -m <test OR train>". This can help to understand how the model performs on average (amoung all the episodes/simulation run throughs)
 4. The next.js front end should now update with the new model results
