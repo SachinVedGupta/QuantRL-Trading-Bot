@@ -8,7 +8,7 @@ IMAGES
 
 
 ABOUT THE PROJECT/APP/MODEL
-
+Note: Each step/day is a step/day into the future. The dates/steps/days go beyond the training data and is thus unseen by the model
 ![image](https://github.com/user-attachments/assets/3da9570f-c1e1-4868-beb9-3ef87ca4464d)
 
 
